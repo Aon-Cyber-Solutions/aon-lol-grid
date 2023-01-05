@@ -29,7 +29,7 @@ npm run build
 
 ### Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/@aoncyber/aon-lol-grid@0.0.1/dist/aon-lol-grid/aon-lol-grid.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/@aoncyber/aon-lol-grid/dist/aon-lol-grid/aon-lol-grid.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
