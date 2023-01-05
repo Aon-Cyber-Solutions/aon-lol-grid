@@ -2,9 +2,7 @@
 
 # List of Lists (LOL) Web Component
 
-This is a starter project for building a standalone Web Component using Stencil.
-
-Stencil is also great for building entire apps. For that, use the [stencil-app-starter](https://github.com/ionic-team/stencil-app-starter) instead.
+Standalone Web Component built with Stencil.
 
 ## Stencil
 
@@ -31,11 +29,11 @@ npm run build
 
 ### Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/my-component@0.0.1/dist/my-component.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/@aoncyber/aon-lol-grid@0.0.1/dist/aon-lol-grid/aon-lol-grid.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
 
-- Run `npm install my-component --save`
-- Put a script tag similar to this `<script type='module' src='node_modules/my-component/dist/my-component.esm.js'></script>` in the head of your index.html
+- Run `npm i @aoncyber/aon-lol-grid`
+- Put a script tag similar to this `<script type='module' src='node_modules/@aoncyber/aon-lol-grid/dist/aon-lol-grid/aon-lol-grid.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc

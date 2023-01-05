@@ -41,5 +41,6 @@ p.extra-small {
   font-size: var(--extra-small-font-size);
   line-height: var(--extra-small-line-height);
   margin-bottom: var(--p-extra-small-margin-bottom);
+  margin-top: 0;
   color: var(--p-extra-small-color);
 }
