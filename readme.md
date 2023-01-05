@@ -37,3 +37,7 @@ npm run build
 - Run `npm i @aoncyber/aon-lol-grid`
 - Put a script tag similar to this `<script type='module' src='node_modules/@aoncyber/aon-lol-grid/dist/aon-lol-grid/aon-lol-grid.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
+
+### Sandbox
+
+- [Codesandbox example](https://codesandbox.io/s/aon-lol-grid-xn7dub?file=/index.html:677-780)
