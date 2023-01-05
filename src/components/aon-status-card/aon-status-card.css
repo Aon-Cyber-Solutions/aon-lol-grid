@@ -1,0 +1,45 @@
+:host {
+  --aon-status-card-radius: 0.4rem;
+  --aon-status-card-indicator-width: 0.4rem;
+  --aon-status-card-width: var(--aon-lol-grid-el-width, 140px);
+  --aon-status-card-height: 80px;
+  --aon-status-card-color: #5d6d78;
+  --aon-status-card-hover-color: #eef6f7;
+  --aon-status-card-padding: 12px;
+  --aon-status-card-border: 1px solid #acc0c4;
+  --primary-font-family: 'Helvetica Now Text', 'Arial', sans-serif;
+  --font-weight-normal: 400;
+  --extra-small-font-size: 0.75rem;
+  --extra-small-line-height: 1rem;
+  --p-extra-small-margin-bottom: 0.5rem;
+  --p-extra-small-color: #46535e;
+}
+
+.aon-status-card {
+  box-sizing: border-box;
+  width: var(--aon-status-card-width);
+  min-width: var(--aon-status-card-width);
+  max-width: var(--aon-status-card-width);
+  height: var(--aon-status-card-height);
+  min-height: var(--aon-status-card-height);
+  padding: var(--aon-status-card-padding);
+  border: var(--aon-status-card-border);
+  border-radius: var(--aon-status-card-radius);
+  border-inline-start-color: var(--aon-status-card-color);
+  border-inline-start-width: var(--aon-status-card-indicator-width);
+  transition: background-color 400ms;
+}
+
+.aon-status-card:hover {
+  cursor: pointer;
+  background-color: var(--aon-status-card-hover-color);
+}
+
+p.extra-small {
+  font-family: var(--primary-font-family);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--extra-small-font-size);
+  line-height: var(--extra-small-line-height);
+  margin-bottom: var(--p-extra-small-margin-bottom);
+  color: var(--p-extra-small-color);
+}

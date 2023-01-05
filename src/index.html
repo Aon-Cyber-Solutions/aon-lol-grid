@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aon Lol Grid</title>
+
+    <script type="module" src="/build/aon-lol-grid.esm.js"></script>
+    <script nomodule src="/build/aon-lol-grid.js"></script>
+  </head>
+
+  <body>
+    <aon-lol-grid id="aon-lol-grid"></aon-lol-grid>
+  </body>
+
+  <script>
+    const itemCount = 10;
+    const gridData = [];
+    for (let i = 0; i < itemCount; i++) {
+      const category1 = {
+        id: `success_${i}`,
+        name: `Category ${i}`,
+        status: 'success'
+      };
+      const category2 = {
+        id: `error_${i}`,
+        name: `Error Category ${i}`,
+        status: 'error'
+      };
+      const category3 = {
+        id: `neutral_${i}`,
+        name: `Neutral Category ${i}`,
+        status: 'neutral'
+      };
+      const category4 = {
+        id: `warning_${i}`,
+        name: `Warning Category ${i}`,
+        status: 'warning'
+      };
+      const domainData = {
+        id: `grid_${i}`,
+        domainName: `Test Domain ${i}`,
+        categories: [category1, category2, category3, category4]
+      };
+      gridData.push(domainData);
+    }
+
+    const legendData = [
+      {
+        id: '001',
+        color: '#ea2238',
+        text: 'All of the controls are not currently in line with industry standard baselines.'
+      },
+      {
+        id: '002',
+        color: '#ffa600',
+        text: 'Some of the controls are not currently in line with industry standard baselines.'
+      },
+      {
+        id: '003',
+        color: '#12a88a',
+        text: 'All of the controls are currently in line with industry standard baselines.'
+      },
+      {
+        id: '004',
+        color: '#5d6d78',
+        text: 'Some of the controls are not evaluated as the current OS version is not directly affected by this attack vector'
+      }
+    ];
+
+    setTimeout(() => {
+      const el = document.getElementById('aon-lol-grid');
+      if (el) {
+        el.data = gridData;
+        el.legendData = legendData;
+      }
+    }, 10);
+  </script>
+</html>

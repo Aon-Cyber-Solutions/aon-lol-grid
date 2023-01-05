@@ -1,0 +1,11 @@
+:host {
+  --legend-items-gap: 20px;
+  --legend-block-margin: 20px;
+}
+
+.aon-legend-wrapper {
+  display: flex;
+  gap: var(--legend-items-gap);
+  flex-wrap: wrap;
+  margin: var(--legend-block-margin) 0;
+}

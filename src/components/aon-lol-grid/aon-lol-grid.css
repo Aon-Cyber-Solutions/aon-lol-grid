@@ -1,0 +1,50 @@
+:host {
+  --aon-lol-grid-gap: 10px;
+  --aon-lol-grid-text-padding: 12px;
+  --aon-lol-grid-block-margin: 10px;
+  --aon-lol-grid-head-text-color: #ffffff;
+  --aon-lol-grid-head-color: #003c55;
+  --aon-lol-grid-head-radius: 4px;
+  --aon-lol-grid-el-width: 140px;
+  --primary-font-family: 'Helvetica Now Text', 'Arial', sans-serif;
+  --font-weight-normal: 400;
+  --extra-small-font-size: 0.75rem;
+  --extra-small-line-height: 1rem;
+}
+
+.aon-lol-grid-wrapper,
+.aon-lol-grid-column {
+  display: flex;
+  gap: var(--aon-lol-grid-gap);
+  margin: var(--aon-lol-grid-block-margin) 0;
+}
+
+.aon-lol-grid-wrapper {
+  overflow: scroll;
+}
+
+.aon-lol-grid-column {
+  flex-direction: column;
+}
+
+.aon-lol-grid-column-head {
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  color: var(--aon-lol-grid-head-text-color);
+  padding: var(--aon-lol-grid-text-padding);
+  border-radius: var(--aon-lol-grid-head-radius);
+  background-color: var(--aon-lol-grid-head-color);
+  width: var(--aon-lol-grid-el-width);
+  max-width: var(--aon-lol-grid-el-width);
+}
+
+.extra-small {
+  font-family: var(--primary-font-family);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--extra-small-font-size);
+  line-height: var(--extra-small-line-height);
+  color: var(--aon-lol-grid-head-text-color);
+}
